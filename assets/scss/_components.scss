@@ -1,0 +1,20 @@
+.rating {
+    display: flex;
+    align-items: center;
+    @include font-size(18);
+
+    &__label {
+        margin-right: 10px;
+    }
+
+    &__score {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $dark;
+        border: 3px solid $green;
+        border-radius: 50%;
+        height: 44px;
+        width: 44px;
+    }
+}
