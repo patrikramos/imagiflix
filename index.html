@@ -65,100 +65,29 @@
                     <div class="rating__score" id="main-vote"></div>
                 </div>
                 <div class="featured__actions">
-                    <button class="btn"><i class="fas fa-play"></i>Assistir</button>
+                    <button class="btn" id="play-featured"><i class="fas fa-play"></i>Assistir</button>
                     <button class="btn"><i class="fas fa-plus"></i>Minha Lista</button>
                 </div>
             </div>
         </div>
     </section>
 
-      <!--Filmes-->
-
     <main class="main">
         <section class="movies-list">
             <div class="container">
                 <h2 class="movies-list__title">Filmes populares na Imagiflix</h2>
             </div>
+            <div class="movies-list__slider" id="slider-popular"></div>
 
-            <div class="movies-list__slider" id="slider-popular">
-                
-                </div>             
-                
-                
-                <!--Series-->
             <div class="container">
                 <h2 class="movies-list__title">Séries populares na Imagiflix</h2>
             </div>
-                        
-            <div class="movies-list__slider">
-                <div class="movies-list__item">
-                    <img src="assets/images/serie1.jpg">
-                    <div class="movies-list__action">
-                        <i class="far fa-play-circle"></i>
-                        <h3>A teoria do Big Bang</h3>
-    
-                        <div class="rating">
-                            <div class="rating__score">8.0</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="movies-list__item">
-                    <img src="assets/images/serie2.jpg">
-                    <div class="movies-list__action">
-                        <i class="far fa-play-circle"></i>
-                        <h3>Suits</h3>
-    
-                        <div class="rating">
-                            <div class="rating__score">8.5</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="movies-list__item">
-                    <img src="assets/images/serie3.jpg">
-                    <div class="movies-list__action">
-                        <i class="far fa-play-circle"></i>
-                        <h3>Mindhunter</h3>
-    
-                        <div class="rating">
-                            <div class="rating__score">7.6</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="movies-list__item">
-                    <img src="assets/images/serie4.jpg">
-                    <div class="movies-list__action">
-                        <i class="far fa-play-circle"></i>
-                        <h3>Walking dead</h3>
-    
-                        <div class="rating">
-                            <div class="rating__score">8.9</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="movies-list__item">
-                    <img src="assets/images/serie5.jpg">
-                    <div class="movies-list__action">
-                        <i class="far fa-play-circle"></i>
-                        <h3>Lei & Ordem</h3>
-    
-                        <div class="rating">
-                            <div class="rating__score">7.3</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="movies-list__item">
-                    <img src="assets/images/serie6.jpg">
-                    <div class="movies-list__action">
-                        <i class="far fa-play-circle"></i>
-                        <h3>Arranha-Céu</h3>
-    
-                        <div class="rating">
-                            <div class="rating__score">8.2</div>
-                        </div>
-                    </div>
-                </div>
-                
+            <div class="movies-list__slider" id="slider-tv"></div>
+
+            <div class="container">
+                <h2 class="movies-list__title">Filmes para a família</h2>
             </div>
+            <div class="movies-list__slider" id="slider-family"></div>
         </section>
     </main>
 
@@ -205,8 +134,36 @@
 
     </footer>
 
+	<div id="loading"></div>
 
+	<div class="modal" id="modal">
+		<i class="far fa-times-circle modal-close"></i>
 
+		<div class="container">
+			<div class="modal-poster">
+				<img src="assets/images/acao1.jpg" alt="">
+				<i class="far fa-play-circle"></i>
+			</div>
+
+			<div class="modal-info">
+				<h2 class="modal-title">Vingadores: Guerra Infinita</h2>
+				<small class="modal-original-title">Avengers: Inifinity War</small>
+
+				<p class="modal-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur debitis iure pariatur assumenda tenetur temporibus repellendus, autem, ducimus laboriosam natus dignissimos totam velit alias commodi fuga ab nihil perferendis officiis.</p>
+
+				<div class="modal-rate-time">
+					<div class="rating">
+						<span class="rating__label">Nota</span>
+						<div class="rating__score">8.5</div>
+					</div>
+
+					<div class="modal-duration"><i class="far fa-clock"></i> 120min</div>
+				</div>
+
+				<a href="#" class="modal-link">www.site.com</a>
+			</div>
+		</div>
+	</div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
